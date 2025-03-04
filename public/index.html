@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="The Weather Forecasting App - To get current and weather forcast for the next week"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="theme-color" content="#007BFF" />
+
+    <!-- SEO Meta Tags -->
+    <meta 
+      name="description" 
+      content="Stay ahead with real-time weather updates and a 7-day forecast for any location worldwide. Accurate, fast, and reliable weather predictions."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="keywords" content="weather, forecast, current weather, temperature, live updates, weather app" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="The Weather | Live Updates & 7-Day Forecast" />
+    <meta property="og:description" content="Real-time weather updates and a 7-day forecast for any location worldwide." />
+    <meta property="og:image" content="%PUBLIC_URL%/weather-thumbnail.png" />
+    <meta property="og:url" content="https://yourweatherapp.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Weather | Live Updates & 7-Day Forecast" />
+    <meta name="twitter:description" content="Accurate real-time weather updates and forecasts worldwide." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/weather-thumbnail.png" />
+
+    <!-- Preconnect for Faster Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload Important Assets -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="icon" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+
+    <!-- Web Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>The Weather | Current & Forecasting</title>
+
+    <title>The Weather | Live Updates & 7-Day Forecast</title>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p>This application requires JavaScript to function properly. Please enable JavaScript in your browser settings.</p>
+    </noscript>
   </body>
 </html>
