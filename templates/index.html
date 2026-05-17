@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            width: 300px;
+            margin: auto;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>🌤 Weather Forecast</h1>
+
+        <form method="POST">
+
+            <input type="text" name="city" placeholder="Digite uma cidade">
+
+            <button type="submit">Buscar</button>
+
+        </form>
+
+        {% if weather %}
+
+        <h2>{{ weather.city }}</h2>
+
+        <h1>{{ weather.temperature }}°C</h1>
+
+        <p>{{ weather.description }}</p>
+
+        <p>Umidade: {{ weather.humidity }}%</p>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
